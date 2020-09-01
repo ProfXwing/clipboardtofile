@@ -17,7 +17,7 @@ while not saved:
         im.save(f'{directory}', 'PNG')
         saved = True
     except AttributeError:
-        print("Cannot save anything but text. Please use WINDOWS + SHIFT + S")
+        print("Cannot save anything but image. Please use WINDOWS + SHIFT + S")
         break
     except FileNotFoundError:
         print("Please choose a directory next time.")
