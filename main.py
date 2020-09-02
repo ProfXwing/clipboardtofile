@@ -18,6 +18,7 @@ while not saved:
         saved = True
     except AttributeError:
         print("Cannot save anything but image. Please use WINDOWS + SHIFT + S")
+        end_script()
         break
     except FileNotFoundError:
         print("Please choose a directory next time.")
@@ -29,4 +30,3 @@ while not saved:
     if saved:
         print(f"Image saved to {directory}")
         break
-end_script()
